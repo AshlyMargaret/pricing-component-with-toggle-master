@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    background: url("../../images/bg-bottom.svg") left bottom no-repeat , url("../../images/bg-top.svg") right no-repeat;
+    height: 500px; /* You must set a specified height */
+  
+}
+.homeTitle{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.toggleSection{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
