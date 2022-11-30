@@ -14,7 +14,29 @@ function Home() {
     const handleChange = nextChecked => {
         setChecked(nextChecked);
       };
-    
+
+    const style = {  backgroundColor: "#9DA1EF" , height:"350px" , color:"white" };
+
+    const basicData = { 
+      price : "$19.99" , 
+      detail1 : "500GB STORAGE", 
+      detail2 : "2 USERS ALLOWED" , 
+      detail3 : "SEND UP TO 3 GB" 
+    }
+
+    const professionalData = { 
+      price : "$24.99" , 
+      detail1 : "1TB STORAGE", 
+      detail2 : "5 USERS ALLOWED" , 
+      detail3 : "SEND UP TO 13 GB" 
+    }
+
+    const masterData = { 
+      price : "$39.99" , 
+      detail1 : "2TB STORAGE", 
+      detail2 : "10 USERS ALLOWED" , 
+      detail3 : "SEND UP TO 20 GB" 
+    }
     
   return (
     <div className='home'>
@@ -34,13 +56,13 @@ function Home() {
          </div>
          <div className="cardSection">
             <div className="section1">
-            <Card/>
+            <Card Data={basicData}/>
             </div>
             <div className="section2">
-            <Card/>
+            <Card style={style} Data={professionalData}/>
             </div>
             <div className="section3">
-            <Card/>
+            <Card  Data={masterData}/>
             </div>          
          </div>
     </div>
